@@ -19,5 +19,5 @@ app.listen(process.env.PORT,()=>{
     console.log(`server is running on port ${process.env.PORT}`);
 })
 
-const userRouter = require("./Routers/UserRouter");
+const userRouter = require("./Routers/auth");
 app.use("/api/users,userRouter");
